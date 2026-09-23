@@ -1,0 +1,57 @@
+{
+    "version": 1,
+    "name": "ElectricalWorkshopInputActions",
+    "maps": [
+        {
+            "name": "Electrical Workshop",
+            "id": "81ca9059-4ff7-4515-9024-7fc9bf0e9f71",
+            "actions": [
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "73d9d1c3-1da8-432c-b276-1f406e43b886",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Replay Voice",
+                    "type": "Button",
+                    "id": "1bb79bb1-5ba1-4bac-83da-5770223bca6d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c8dafd00-75ff-4106-9a46-a4b6aa924df1",
+                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cae07a8b-06ca-4774-86e7-396e030205bf",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Replay Voice",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

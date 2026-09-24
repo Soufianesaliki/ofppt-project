@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: e57ee86d44d808f419f43e9a95f29dd2
+guid: ccb5adbdd7808c144971d22c9bc8f6e9
 ModelImporter:
   serializedVersion: 24300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bronze-mat
+    second: {fileID: 2100000, guid: deef734ae1d7b4548ac8b6567f92a45a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal-mat
+    second: {fileID: 2100000, guid: 225e4a9e614fc8a459e2d947e9b032fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: motor-ext-mat
+    second: {fileID: 2100000, guid: d484c1be3f1f5ab46862ddab52d47565, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

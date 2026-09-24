@@ -1,0 +1,1945 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3345533765289123934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8914964310805674273}
+  m_Layer: 0
+  m_Name: Motor 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8914964310805674273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3345533765289123934}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 1.082, z: 11.304}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4902138678675136620}
+  - {fileID: 1109171826346168181}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4867648316703180679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8914964310805674273}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.017
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.082
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.5859995
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      propertyPath: m_Name
+      value: motor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7361563121405994835, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5291983812487309039}
+    - targetCorrespondingSourceObject: {fileID: -600135265354368, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6247938734610922319}
+    - targetCorrespondingSourceObject: {fileID: 6791586844996792985, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3658474937252534677}
+    - targetCorrespondingSourceObject: {fileID: -7495837207420003454, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2868049179768803759}
+    - targetCorrespondingSourceObject: {fileID: 3417943049252968385, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7228997957500110250}
+    - targetCorrespondingSourceObject: {fileID: 8687605519658776560, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8883050946958237937}
+    - targetCorrespondingSourceObject: {fileID: 5439947440516772824, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5236566888981478670}
+    - targetCorrespondingSourceObject: {fileID: 1993645403545042287, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1751695174657593466}
+    - targetCorrespondingSourceObject: {fileID: -6209686284189982287, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3040587133128645167}
+    - targetCorrespondingSourceObject: {fileID: 7679708108845295539, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6641768659990475790}
+    - targetCorrespondingSourceObject: {fileID: -1629564588951895636, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3769804244592228727}
+    - targetCorrespondingSourceObject: {fileID: -641108023013460590, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2435575230940061050}
+    - targetCorrespondingSourceObject: {fileID: 3433695697841389799, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6269069161547892237}
+    - targetCorrespondingSourceObject: {fileID: -2831345025269679164, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5753215904109692769}
+    - targetCorrespondingSourceObject: {fileID: 6487297605042687394, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5857988295539812633}
+    - targetCorrespondingSourceObject: {fileID: -2372021830062074229, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2027683541762400174}
+    - targetCorrespondingSourceObject: {fileID: 6512668652050524161, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9041716568409179452}
+    - targetCorrespondingSourceObject: {fileID: -6670589858936918493, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1686171126031313872}
+    - targetCorrespondingSourceObject: {fileID: -9021181742134887707, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2445849417676367071}
+    - targetCorrespondingSourceObject: {fileID: -5136446137700459925, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7744551811327893604}
+    - targetCorrespondingSourceObject: {fileID: -5710389101409945451, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4343228692590822257}
+    - targetCorrespondingSourceObject: {fileID: -5300271862915953112, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2441219820479838795}
+    - targetCorrespondingSourceObject: {fileID: -361245288233818163, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3167201537126943821}
+    - targetCorrespondingSourceObject: {fileID: 9188781735847173401, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 633264291351251376}
+    - targetCorrespondingSourceObject: {fileID: -6860671252493365703, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4925536509784815481}
+  m_SourcePrefab: {fileID: 100100000, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+--- !u!1 &645087022550299743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5439947440516772824, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5236566888981478670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645087022550299743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: -0.04, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 3
+  activate: 0
+  reset: 0
+--- !u!1 &1840528135109528101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6487297605042687394, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5857988295539812633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840528135109528101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: -0.4, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 3
+  activate: 0
+  reset: 0
+--- !u!1 &1868142791177285510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6512668652050524161, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9041716568409179452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868142791177285510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: -0.3, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &1961413200551623747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2831345025269679164, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5753215904109692769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961413200551623747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: -0.7, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 0
+  endPhaseDelay: 0.5
+  activationDelay: 6
+  activate: 0
+  reset: 0
+--- !u!1 &2060888225910788364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2372021830062074229, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2027683541762400174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060888225910788364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0.2, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 3
+  activate: 0
+  reset: 0
+--- !u!1 &2147597009998116126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6791586844996792985, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3658474937252534677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147597009998116126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: 0.3}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &2712533657684943060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7361563121405994835, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5291983812487309039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2712533657684943060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: 0.3}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &2962965638138961972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7679708108845295539, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6641768659990475790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2962965638138961972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: -0.5, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &3093906944455902763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1629564588951895636, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3769804244592228727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093906944455902763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: -0.5, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &3789515190509122069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -641108023013460590, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2435575230940061050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789515190509122069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: -0.5, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &4139306177904582730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -361245288233818163, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3167201537126943821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139306177904582730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 0
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &4259788878269182071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8687605519658776560, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8883050946958237937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4259788878269182071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: -0.1}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 3
+  activate: 0
+  reset: 0
+--- !u!1 &4325777911150516894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9188781735847173401, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &633264291351251376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325777911150516894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 0
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &4355124277451684359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -600135265354368, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6247938734610922319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355124277451684359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: 0.3}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &4702619318839442786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -9021181742134887707, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2445849417676367071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702619318839442786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0.6, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!4 &4902138678675136620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6085545745569291269 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7495837207420003454, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2868049179768803759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6085545745569291269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: 0.3}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &6352192808358214376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1993645403545042287, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1751695174657593466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6352192808358214376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0.1, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 3
+  activate: 0
+  reset: 0
+--- !u!1 &6980598695001778596 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6670589858936918493, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1686171126031313872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6980598695001778596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0.4, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 3
+  activate: 0
+  reset: 0
+--- !u!1 &7153021890317584830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6860671252493365703, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4925536509784815481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153021890317584830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: 0.2}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &7665020339308635702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6209686284189982287, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3040587133128645167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665020339308635702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: -0.5, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &7794513047611017056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3433695697841389799, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6269069161547892237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7794513047611017056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0.7, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 0
+  endPhaseDelay: 0.5
+  activationDelay: 6
+  activate: 0
+  reset: 0
+--- !u!1 &7846296681005060166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3417943049252968385, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7228997957500110250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7846296681005060166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: 0.1}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 3
+  activate: 0
+  reset: 0
+--- !u!1 &8308511312362454802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5710389101409945451, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4343228692590822257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8308511312362454802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 0
+  endPhaseDelay: 0.5
+  activationDelay: 0
+  activate: 0
+  reset: 0
+--- !u!1 &8501945659488373167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5300271862915953112, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2441219820479838795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8501945659488373167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0.7, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 6
+  activate: 0
+  reset: 0
+--- !u!1 &8879674773759647212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5136446137700459925, guid: ccb5adbdd7808c144971d22c9bc8f6e9, type: 3}
+  m_PrefabInstance: {fileID: 4867648316703180679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7744551811327893604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8879674773759647212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+  positionOffset: {x: 0.6, y: 0, z: 0}
+  rotationOffsetEuler: {x: 0, y: 0, z: 0}
+  initialOpacity: 1
+  finalOpacity: 1
+  duration: 0.5
+  easingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  endPhase: 1
+  endPhaseDelay: 0.5
+  activationDelay: 3
+  activate: 0
+  reset: 0
+--- !u!1001 &6309525265614644867
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8914964310805674273}
+    m_Modifications:
+    - target: {fileID: 32974220765747350, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 81442024798993540, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 93879717216007508, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93879717216007508, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 93879717216007508, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 93879717216007508, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.y
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 171335857024123780, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 171335857024123780, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 171335857024123780, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 171335857024123780, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360396777441617436, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 389074951784530879, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018390013289174, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: isLoop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018390013289174, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018390013289174, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018390013289174, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 534806200541554789, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 534806200541554789, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 534806200541554789, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 564302236170745305, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 600951139955271367, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 600951139955271367, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 600951139955271367, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141453894263721139, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141453894263721139, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141453894263721139, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141453894263721139, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141453894263721139, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295640340295424994, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295640340295424994, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295640340295424994, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449970202453048773, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349781115719496605, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2370260210550166276, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514595238902508205, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710425924282313168, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2878174440157002221, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917088950108584847, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124295548274999763, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124295548274999763, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124295548274999763, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513867520591146171, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651849956925146555, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651849956925146555, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651849956925146555, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887180979935668654, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3892052309586661297, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127621559073663310, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645366930704335082, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645366930704335082, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4645366930704335082, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791029572385633030, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791029572385633030, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791029572385633030, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957089594881684338, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201869800713938233, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201869800713938233, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201869800713938233, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201869800713938233, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5231116311224014239, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597329932739624475, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795150473048534126, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795150473048534126, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795150473048534126, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795150473048534126, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933780623410987739, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933780623410987739, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933780623410987739, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026008193662743372, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_Name
+      value: motor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6030094230908729606, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: isLoop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6030094230908729606, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6030094230908729606, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6030094230908729606, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105391788221022986, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105391788221022986, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105391788221022986, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.5859995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6738698427124668192, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6738698427124668192, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6738698427124668192, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6738698427124668192, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750777471947126008, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853685074568425457, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482284534491157622, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7570658197958344757, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043807207317567112, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8074741168638548444, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126524924921564922, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143881381457511358, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143881381457511358, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143881381457511358, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553184988083580844, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604380982973781067, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604380982973781067, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604380982973781067, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604380982973781067, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701956796758837989, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701956796758837989, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701956796758837989, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778767799326729966, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8938671686126706750, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070380588929463979, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070380588929463979, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070380588929463979, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070380588929463979, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070380588929463979, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168880492583007786, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168880492583007786, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: endPhase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168880492583007786, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: activationDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168880492583007786, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: positionOffset.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9198664429539377188, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+--- !u!4 &1109171826346168181 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6407353617986890230, guid: 6bcdbbcc33c7f134d84ea58d76937809, type: 3}
+  m_PrefabInstance: {fileID: 6309525265614644867}
+  m_PrefabAsset: {fileID: 0}

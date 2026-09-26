@@ -277,6 +277,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: black-cbl-mat
+    second: {fileID: 2100000, guid: 108cd411a3e142242aa428e9ddc0b3c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bronze-mat
+    second: {fileID: 2100000, guid: 3405731dde7e14546b1bcf67626ecf23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ghost-mat
+    second: {fileID: 2100000, guid: 56a8e584ada921648b609496a2893519, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: laqueado brilhoso branco.001
     second: {fileID: 2100000, guid: 2955abb6747ebbd47b08d461c137b34f, type: 2}
   - first:
@@ -284,6 +299,26 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: laqueado brilhoso branco.004
     second: {fileID: 2100000, guid: 51b47571cfc2bd64bb37f979ff9a0381, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal-mat
+    second: {fileID: 2100000, guid: ebc08acda2c26024a922fc6cfcef72a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal-rail-mat
+    second: {fileID: 2100000, guid: 5464c54ce14e53549abfb8048eb21be7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: motor-ext-mat
+    second: {fileID: 2100000, guid: b713798f75a50184da6ddfe555e5b673, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phase-cbl-mat
+    second: {fileID: 2100000, guid: c1bd805fe0431d04ca022feb6ae013e8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

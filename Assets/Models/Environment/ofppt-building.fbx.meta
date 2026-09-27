@@ -7,6 +7,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: 0v-cbl-mat
+    second: {fileID: 2100000, guid: a5e7b9cb6a6dcda4ebf70dfd276472e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 24v-cbl-mat
+    second: {fileID: 2100000, guid: eeb4dd0db7daa154dbabd630d10b488c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: 3D Maple - Unfinished
     second: {fileID: 2100000, guid: 15a6010d33105624c95c3a653fb46d2b, type: 2}
   - first:

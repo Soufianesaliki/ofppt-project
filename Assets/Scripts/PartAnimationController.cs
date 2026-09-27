@@ -1,9 +1,17 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
-/// Animates a single part's world position, world rotation, and material opacity
-/// from an initial value to a final value over a fixed duration.
+/// Animates a single part's world position and world rotation from an initial value
+/// to a final value over a fixed duration (the "reveal"), and separately supports
+/// disappearing (the "hide") — either instantly or as an opacity fade using the same
+/// duration/easingCurve, reusing initialOpacity/finalOpacity for the fade range.
 /// Assign this script directly on each part you want to animate.
+///
+/// Batch progression is driven strictly by the Next (B) button via
+/// MotorAnimationManager: reveal moves the piece into view; Hide() is called by the
+/// manager once this piece's batch is superseded by the next one (or, for the final
+/// batch, once the extra press that closes out Scenario 1 happens).
 /// </summary>
 [RequireComponent(typeof(Renderer))]
 public class PartAnimationController : MonoBehaviour
@@ -15,35 +23,36 @@ public class PartAnimationController : MonoBehaviour
     [Tooltip("Rotation offset (Euler angles) added to the initial rotation.")]
     public Vector3 rotationOffsetEuler;
 
-    [Tooltip("Opacity at the start of the animation (0 = transparent, 1 = opaque).")]
-    [Range(0f, 1f)] public float initialOpacity = 1f;
-
-    [Tooltip("Opacity at the end of the animation (0 = transparent, 1 = opaque).")]
-    [Range(0f, 1f)] public float finalOpacity = 1f;
-
     [Header("Timing")]
-    [Tooltip("Duration of the animation in seconds.")]
+    [Tooltip("Duration in seconds of both the reveal move and (if animated) the hide fade.")]
     public float duration = 1f;
 
-    [Tooltip("Shapes how t (0-1) progresses over the duration.")]
+    [Tooltip("Shapes how t (0-1) progresses over duration, for both the reveal move and the hide fade.")]
     public AnimationCurve easingCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
-    [Header("End Phase")]
-    [Tooltip("If true, the part's Renderer and Collider (if present) are disabled after reaching the final value.")]
-    public bool endPhase = false;
+    [Header("Hide")]
+    [Tooltip("If true, Hide() fades opacity from initialOpacity to finalOpacity over duration/easingCurve before disabling. If false, Hide() disables immediately.")]
+    public bool animateHide = false;
 
-    [Tooltip("Delay in seconds between reaching the final value and disabling the part.")]
-    public float endPhaseDelay = 0f;
+    [Tooltip("Opacity at the start of the hide fade (0 = transparent, 1 = opaque). Only used if animateHide is true.")]
+    [Range(0f, 1f)] public float initialOpacity = 1f;
+
+    [Tooltip("Opacity at the end of the hide fade (0 = transparent, 1 = opaque). Only used if animateHide is true.")]
+    [Range(0f, 1f)] public float finalOpacity = 0f;
 
     [Header("Trigger")]
-    [Tooltip("Delay in seconds before the animation starts after activate is set to true. 0 = instant.")]
-    public float activationDelay = 0f;
-
-    [Tooltip("Set to true to start the animation. Automatically turns false when the animation finishes.")]
+    [Tooltip("Set to true to start the reveal. Automatically turns false when the reveal finishes.")]
     public bool activate = false;
 
-    [Tooltip("Set to true to reset the part back to its original position, rotation and opacity. Only works while idle (not animating, not waiting). Always turns back to false.")]
+    [Tooltip("Set to true to reset the part back to its original position/rotation, visible again. Only works while idle (not animating, not hiding). Always turns back to false.")]
     public bool reset = false;
+
+    [Header("Events")]
+    [Tooltip("Invoked once the reveal move reaches its final value. Not invoked by reset().")]
+    public UnityEvent onRevealComplete = new UnityEvent();
+
+    [Tooltip("Invoked once the piece has fully disappeared (instantly, or after the hide fade finishes).")]
+    public UnityEvent onHideComplete = new UnityEvent();
 
     // Captured at scene load
     private Vector3 initialPosition;
@@ -54,13 +63,13 @@ public class PartAnimationController : MonoBehaviour
     private Quaternion finalRotation;
 
     private Renderer rend;
-    private Collider col;
+    private Collider col; // may be null, guarded on use
     private Material materialInstance;
 
     private bool isAnimating = false;
-    private bool isWaitingToActivate = false;
-    private bool isWaitingToEndPhase = false;
+    private bool isHiding = false;
     private float elapsed = 0f;
+    private float hideElapsed = 0f;
 
     private void Awake()
     {
@@ -73,19 +82,29 @@ public class PartAnimationController : MonoBehaviour
         finalRotation = initialRotation * Quaternion.Euler(rotationOffsetEuler);
 
         rend = GetComponent<Renderer>();
-        col = GetComponent<Collider>(); // may be null, guarded on use
+        col = GetComponent<Collider>();
         materialInstance = rend.material; // Unity auto-instances this material
+    }
 
-        SetOpacity(initialOpacity);
+    /// <summary>
+    /// Called by the manager once this piece's batch is superseded. Always resolves
+    /// on the next Update() tick — even the instant (non-animated) case — so
+    /// onHideComplete never fires synchronously from within the caller's own call
+    /// stack (e.g. MotorAnimationManager mid-loop).
+    /// </summary>
+    public void Hide()
+    {
+        if (isHiding) return;
+
+        hideElapsed = 0f;
+        isHiding = true;
     }
 
     private void Update()
     {
         if (reset)
         {
-            bool isIdle = !isAnimating && !isWaitingToActivate && !isWaitingToEndPhase;
-
-            if (isIdle)
+            if (!isAnimating && !isHiding)
             {
                 ResetToInitial();
             }
@@ -93,67 +112,50 @@ public class PartAnimationController : MonoBehaviour
             reset = false;
         }
 
-        if (activate && !isAnimating && !isWaitingToActivate)
-        {
-            if (activationDelay > 0f)
-            {
-                isWaitingToActivate = true;
-                StartCoroutine(ActivateAfterDelay());
-            }
-            else
-            {
-                BeginAnimation();
-            }
-        }
-
-        if (!isAnimating)
-            return;
-
-        elapsed += Time.deltaTime;
-        float t = Mathf.Clamp01(elapsed / duration);
-        float curvedT = easingCurve.Evaluate(t);
-
-        transform.position = Vector3.Lerp(initialPosition, finalPosition, curvedT);
-        transform.rotation = Quaternion.Slerp(initialRotation, finalRotation, curvedT);
-        SetOpacity(Mathf.Lerp(initialOpacity, finalOpacity, curvedT));
-
-        if (t >= 1f)
-        {
-            isAnimating = false;
-            activate = false;
-
-            if (endPhase)
-            {
-                isWaitingToEndPhase = true;
-                StartCoroutine(DisableAfterDelay());
-            }
-        }
-    }
-
-    private System.Collections.IEnumerator ActivateAfterDelay()
-    {
-        yield return new WaitForSeconds(activationDelay);
-
-        isWaitingToActivate = false;
-
-        // If activate was set back to false during the wait, cancel.
-        if (activate)
+        if (activate && !isAnimating && !isHiding)
         {
             BeginAnimation();
         }
-    }
 
-    private System.Collections.IEnumerator DisableAfterDelay()
-    {
-        yield return new WaitForSeconds(endPhaseDelay);
-
-        rend.enabled = false;
-        if (col != null)
+        if (isAnimating)
         {
-            col.enabled = false;
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / duration);
+            float curvedT = easingCurve.Evaluate(t);
+
+            transform.position = Vector3.Lerp(initialPosition, finalPosition, curvedT);
+            transform.rotation = Quaternion.Slerp(initialRotation, finalRotation, curvedT);
+
+            if (t >= 1f)
+            {
+                isAnimating = false;
+                activate = false;
+                onRevealComplete.Invoke();
+            }
+
+            return;
         }
 
-        isWaitingToEndPhase = false;
+        if (isHiding)
+        {
+            if (animateHide)
+            {
+                hideElapsed += Time.deltaTime;
+                float t = Mathf.Clamp01(hideElapsed / duration);
+                float curvedT = easingCurve.Evaluate(t);
+
+                SetOpacity(Mathf.Lerp(initialOpacity, finalOpacity, curvedT));
+
+                if (t >= 1f)
+                {
+                    DisableNow();
+                }
+            }
+            else
+            {
+                DisableNow();
+            }
+        }
     }
 
     private void BeginAnimation()
@@ -162,12 +164,25 @@ public class PartAnimationController : MonoBehaviour
         isAnimating = true;
     }
 
+    private void DisableNow()
+    {
+        isHiding = false;
+        rend.enabled = false;
+        if (col != null)
+        {
+            col.enabled = false;
+        }
+
+        onHideComplete.Invoke();
+    }
+
     private void ResetToInitial()
     {
         transform.position = initialPosition;
         transform.rotation = initialRotation;
         SetOpacity(initialOpacity);
         activate = false;
+        isHiding = false;
 
         rend.enabled = true;
         if (col != null)
@@ -178,7 +193,13 @@ public class PartAnimationController : MonoBehaviour
 
     private void SetOpacity(float alpha)
     {
-        if (materialInstance.HasProperty("_Color"))
+        if (materialInstance.HasProperty("_BaseColor"))
+        {
+            Color c = materialInstance.GetColor("_BaseColor");
+            c.a = alpha;
+            materialInstance.SetColor("_BaseColor", c);
+        }
+        else if (materialInstance.HasProperty("_Color"))
         {
             Color c = materialInstance.color;
             c.a = alpha;

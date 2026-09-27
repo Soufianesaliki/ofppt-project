@@ -219,6 +219,7 @@ Transform:
   m_Children:
   - {fileID: 1459977392}
   - {fileID: 1275384368}
+  - {fileID: 456454324}
   - {fileID: 192757939}
   - {fileID: 564433326}
   - {fileID: 1067990781}
@@ -1146,6 +1147,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418492680}
   m_CullTransparentMesh: 1
+--- !u!1 &456454323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456454324}
+  m_Layer: 0
+  m_Name: therm-attach
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &456454324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456454323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1573, y: 1.30376, z: 2.2569}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 148538299}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &505887184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,6 +1522,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4976225750526117599, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
       insertIndex: -1
       addedObject: {fileID: 356756497}
+    - targetCorrespondingSourceObject: {fileID: -2994691537530769966, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1399293975}
+    - targetCorrespondingSourceObject: {fileID: -2994691537530769966, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1399293973}
+    - targetCorrespondingSourceObject: {fileID: -2994691537530769966, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1399293974}
     - targetCorrespondingSourceObject: {fileID: -7620314949061680688, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
       insertIndex: -1
       addedObject: {fileID: 640186006}
@@ -3733,6 +3774,94 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4166133654415793363, guid: b31cee32006cf9140afa35237b97c371, type: 3}
   m_PrefabInstance: {fileID: 1431101060984588732}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1399293969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2994691537530769966, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+  m_PrefabInstance: {fileID: 640185998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1399293973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399293969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_Handedness: 0
+  m_AttachTransform: {fileID: 456454324}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters:
+  - {fileID: 1399293974}
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 0}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!114 &1399293974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399293969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ddc1ab62d29da4ea9481336d6ff254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ExpectedComponentSocketFilter
+  _expectedInteractable: {fileID: 0}
+--- !u!65 &1399293975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399293969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.10077427, y: 0.22130235, z: 0.14574304}
+  m_Center: {x: -0.0007603802, y: 0.11065116, z: 0.0052756215}
 --- !u!1 &1459977391
 GameObject:
   m_ObjectHideFlags: 0
@@ -6320,6 +6449,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7243938514973348108, guid: b31cee32006cf9140afa35237b97c371, type: 3}
+      propertyPath: _correctSocket
+      value: 
+      objectReference: {fileID: 1399293973}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

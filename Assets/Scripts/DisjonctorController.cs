@@ -26,7 +26,7 @@ namespace ElectricalWorkshop.Components
     ///   becomes true, and back to its initial orientation when isOn becomes false.
     /// </summary>
     [DisallowMultipleComponent]
-    public class DisjonctorController : MonoBehaviour
+    public class DisjonctorController : MonoBehaviour, ISnappable
     {
         [System.Serializable]
         public class BoolUnityEvent : UnityEvent<bool> { }
@@ -83,6 +83,8 @@ namespace ElectricalWorkshop.Components
 
         /// <summary>True while this breaker is placed in its correct circuit slot.</summary>
         public bool isSnaped => _isSnaped;
+
+        UnityEvent<bool> ISnappable.onSnappedChanged => onSnappedChanged;
 
         private void Awake()
         {

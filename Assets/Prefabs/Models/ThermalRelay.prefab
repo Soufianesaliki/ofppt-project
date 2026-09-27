@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4166133654415793363}
-  - component: {fileID: 6329372378313635040}
   - component: {fileID: 7243938514973348108}
+  - component: {fileID: 6329372378313635040}
   - component: {fileID: 2720437170138008736}
   - component: {fileID: 7420274014092641656}
   m_Layer: 0
@@ -36,6 +36,23 @@ Transform:
   - {fileID: 7583657530067733163}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7243938514973348108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179586001334334798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e5a9600a3f5d84592c0c2bfe697911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ThermalRelayController
+  _grabInteractable: {fileID: 0}
+  _correctSocket: {fileID: 0}
+  onSnappedChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6329372378313635040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,23 +183,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &7243938514973348108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179586001334334798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16e5a9600a3f5d84592c0c2bfe697911, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ThermalRelayController
-  _grabInteractable: {fileID: 0}
-  _correctSocket: {fileID: 0}
-  onSnappedChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!54 &2720437170138008736
 Rigidbody:
   m_ObjectHideFlags: 0

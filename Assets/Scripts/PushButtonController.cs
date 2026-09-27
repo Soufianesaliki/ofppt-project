@@ -22,7 +22,7 @@ namespace ElectricalWorkshop.Components
     /// - _targetRenderer: the Renderer whose material colour should follow the `color` property.
     /// </summary>
     [DisallowMultipleComponent]
-    public class PushButtonController : MonoBehaviour
+    public class PushButtonController : MonoBehaviour, ISnappable
     {
         [System.Serializable]
         public class BoolUnityEvent : UnityEvent<bool> { }
@@ -62,6 +62,8 @@ namespace ElectricalWorkshop.Components
 
         /// <summary>True while this button is placed in its correct circuit slot.</summary>
         public bool isSnaped => _isSnaped;
+
+        UnityEvent<bool> ISnappable.onSnappedChanged => onSnappedChanged;
 
         /// <summary>Button colour. Setting this updates the instance's material at runtime.</summary>
         public Color color

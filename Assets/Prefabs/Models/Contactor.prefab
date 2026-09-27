@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8197905478230648336}
-  - component: {fileID: 8898791751576155522}
   - component: {fileID: 8313487283810557771}
+  - component: {fileID: 8898791751576155522}
   - component: {fileID: 2300039097208265764}
   - component: {fileID: 2500207581999004835}
   - component: {fileID: 6975480906439660340}
@@ -37,6 +37,26 @@ Transform:
   - {fileID: 2379912324604936589}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8313487283810557771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015345735969504544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b206d707eff01554c9b36c28f699657a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ContactorController
+  _grabInteractable: {fileID: 0}
+  _correctSocket: {fileID: 0}
+  onStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onSnappedChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8898791751576155522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,26 +187,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &8313487283810557771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8015345735969504544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b206d707eff01554c9b36c28f699657a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ContactorController
-  _grabInteractable: {fileID: 0}
-  _correctSocket: {fileID: 0}
-  onStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onSnappedChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!54 &2300039097208265764
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 933529630312737206}
-  - component: {fileID: 5200155971419894150}
   - component: {fileID: 2609058123131156984}
+  - component: {fileID: 5200155971419894150}
   - component: {fileID: 3426134969634222457}
   - component: {fileID: 8177750959004381276}
   m_Layer: 0
@@ -36,6 +36,32 @@ Transform:
   - {fileID: 8611401210552404113}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2609058123131156984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4523542781644866330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096b66b66d596144a966649486e7801a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.VoyantController
+  _grabInteractable: {fileID: 0}
+  _correctSocket: {fileID: 0}
+  _targetRenderer: {fileID: 7479066221116634110}
+  _materialIndex: 2
+  _colorPropertyName: _BaseColor
+  _offColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  _onIntensity: 0.2
+  _isOn: 0
+  onStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onSnappedChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5200155971419894150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,32 +192,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &2609058123131156984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4523542781644866330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 096b66b66d596144a966649486e7801a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.VoyantController
-  _grabInteractable: {fileID: 0}
-  _correctSocket: {fileID: 0}
-  _targetRenderer: {fileID: 7479066221116634110}
-  _materialIndex: 2
-  _colorPropertyName: _BaseColor
-  _offColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  _onIntensity: 0.2
-  _isOn: 0
-  onStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onSnappedChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!65 &3426134969634222457
 BoxCollider:
   m_ObjectHideFlags: 0

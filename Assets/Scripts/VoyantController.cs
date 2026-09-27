@@ -27,7 +27,7 @@ namespace ElectricalWorkshop.Components
     /// in either state, always produces a consistent result with no drift.
     /// </summary>
     [DisallowMultipleComponent]
-    public class VoyantController : MonoBehaviour
+    public class VoyantController : MonoBehaviour, ISnappable
     {
         [System.Serializable]
         public class BoolUnityEvent : UnityEvent<bool> { }
@@ -115,6 +115,8 @@ namespace ElectricalWorkshop.Components
 
         /// <summary>True while this voyant is placed in its correct circuit slot.</summary>
         public bool isSnaped => _isSnaped;
+
+        UnityEvent<bool> ISnappable.onSnappedChanged => onSnappedChanged;
 
         private void Awake()
         {

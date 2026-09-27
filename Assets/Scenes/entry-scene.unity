@@ -130,17 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
---- !u!114 &43199785 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6269069161547892237, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
-  m_PrefabInstance: {fileID: 8804018212033969156}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
 --- !u!1 &43672256
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +465,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ExpectedComponentSocketFilter
   _expectedInteractable: {fileID: 1248911397}
+--- !u!23 &152202912 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2738279457669629963, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+  m_PrefabInstance: {fileID: 640185998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &192757938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,6 +1144,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ExpectedComponentSocketFilter
   _expectedInteractable: {fileID: 1588199128}
+--- !u!23 &400091848 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 692213400740405276, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+  m_PrefabInstance: {fileID: 640185998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,12 +1558,12 @@ Transform:
   m_Children:
   - {fileID: 9008611107568167330}
   - {fileID: 1663748696055307462}
-  - {fileID: 773953192}
+  - {fileID: 1394879757}
   - {fileID: 1588199124}
   - {fileID: 1248911392}
   - {fileID: 1667888470}
   - {fileID: 1691865598}
-  - {fileID: 1394879757}
+  - {fileID: 773953192}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &564433325
@@ -1703,6 +1702,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88651586}
     m_Modifications:
+    - target: {fileID: -9051174281053103130, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1743,6 +1746,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7620314949061680688, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4592930725370098595, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2994691537530769966, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -750203960621394018, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -378028377543538256, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -1767,9 +1786,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: ofppt-building
       objectReference: {fileID: 0}
+    - target: {fileID: 3151059453064400319, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3727203382229045532, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859524369999963456, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6598171449040521404, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
       propertyPath: m_IsActive
@@ -2030,6 +2057,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.042387914, y: 0.042561173, z: 0.022310814}
   m_Center: {x: 0, y: 0, z: -0.011242059}
+--- !u!23 &640186009 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8170472649376671757, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+  m_PrefabInstance: {fileID: 640185998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &640186012 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3713445448558370664, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+  m_PrefabInstance: {fileID: 640185998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &648754826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2792,6 +2829,7 @@ Transform:
   m_Children:
   - {fileID: 963480137}
   - {fileID: 1378622254}
+  - {fileID: 1677732781}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959167434
@@ -3044,6 +3082,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.11699951, y: 0.10533263, z: 0.12842846}
   m_Center: {x: -0.000016320497, y: 0.043088634, z: -0.0009825527}
+--- !u!23 &1007868015 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2078817662768175391, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+  m_PrefabInstance: {fileID: 640185998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1017389608 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4355124277451684359, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
@@ -4339,6 +4382,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4166133654415793363, guid: b31cee32006cf9140afa35237b97c371, type: 3}
   m_PrefabInstance: {fileID: 1431101060984588732}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1394879760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7243938514973348108, guid: b31cee32006cf9140afa35237b97c371, type: 3}
+  m_PrefabInstance: {fileID: 1431101060984588732}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e5a9600a3f5d84592c0c2bfe697911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ThermalRelayController
 --- !u!1 &1399293969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2994691537530769966, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
@@ -4427,6 +4481,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.10077427, y: 0.22130235, z: 0.14574304}
   m_Center: {x: -0.0007603802, y: 0.11065116, z: 0.0052756215}
+--- !u!23 &1399293977 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5799966194047409734, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+  m_PrefabInstance: {fileID: 640185998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1444815660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5280911722126067777, guid: fac219283afb63947b133316b7dbbf9c, type: 3}
+  m_PrefabInstance: {fileID: 1248911391}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb742ab9ccb26224b90bfa27cb926dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.PushButtonController
 --- !u!1 &1459977391
 GameObject:
   m_ObjectHideFlags: 0
@@ -4696,6 +4766,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.115580484, y: 0.0936475, z: 0.12842846}
   m_Center: {x: 0, y: 0.037246067, z: -0.0009825527}
+--- !u!23 &1472654213 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3663513512399008017, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+  m_PrefabInstance: {fileID: 640185998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1512583878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5510,6 +5585,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 933529630312737206, guid: 011eda90765da044eb473163837a0bb9, type: 3}
   m_PrefabInstance: {fileID: 7746954642246933917}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1677732780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677732781}
+  - component: {fileID: 1677732782}
+  m_Layer: 0
+  m_Name: Wiring-Code
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1677732781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677732780}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 939113364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1677732782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677732780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83e6b55cbcf3aa48a549521b7bbfaa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.WiringSequenceManager
+  steps:
+  - label: Disjonctor
+    componentController: {fileID: 9008611107568167338}
+    socketRevealRenderers:
+    - {fileID: 1007868015}
+  - label: Contactor
+    componentController: {fileID: 1663748696055307467}
+    socketRevealRenderers:
+    - {fileID: 1472654213}
+  - label: Thermal Relay
+    componentController: {fileID: 1394879760}
+    socketRevealRenderers:
+    - {fileID: 1399293977}
+  - label: Arr Button
+    componentController: {fileID: 1742114357}
+    socketRevealRenderers:
+    - {fileID: 400091848}
+  - label: Mar Button
+    componentController: {fileID: 1444815660}
+    socketRevealRenderers:
+    - {fileID: 152202912}
+  - label: Arr Voyant
+    componentController: {fileID: 7746954642246933921}
+    socketRevealRenderers:
+    - {fileID: 640186012}
+  - label: Mar Voyant
+    componentController: {fileID: 1691865602}
+    socketRevealRenderers:
+    - {fileID: 640186009}
+  onScenario2Complete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1690868613 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8883050946958237937, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
@@ -5614,6 +5765,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
+--- !u!114 &1691865602 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
+  m_PrefabInstance: {fileID: 1691865597}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096b66b66d596144a966649486e7801a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.VoyantController
 --- !u!1 &1708561529
 GameObject:
   m_ObjectHideFlags: 0
@@ -5800,6 +5962,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+--- !u!114 &1742114357 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5280911722126067777, guid: fac219283afb63947b133316b7dbbf9c, type: 3}
+  m_PrefabInstance: {fileID: 4068168789093815053}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb742ab9ccb26224b90bfa27cb926dad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.PushButtonController
 --- !u!1 &1743654636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6085545745569291269, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
@@ -7712,6 +7885,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
+--- !u!114 &1663748696055307467 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8313487283810557771, guid: c14edc9fd99deae40a270da929b75996, type: 3}
+  m_PrefabInstance: {fileID: 1663748696055307461}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b206d707eff01554c9b36c28f699657a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ContactorController
 --- !u!1001 &1752867784586922180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8152,6 +8336,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
+--- !u!114 &7746954642246933921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
+  m_PrefabInstance: {fileID: 7746954642246933917}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096b66b66d596144a966649486e7801a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.VoyantController
 --- !u!1001 &8804018212033969156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8735,7 +8930,7 @@ PrefabInstance:
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: 'batches.Array.data[2].pieces.Array.data[1]'
       value: 
-      objectReference: {fileID: 43199785}
+      objectReference: {fileID: 0}
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: 'batches.Array.data[2].pieces.Array.data[2]'
       value: 
@@ -8996,6 +9191,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
+--- !u!114 &9008611107568167338 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6978323963512742446, guid: bed7724747a0db74db9bccf45108b7cf, type: 3}
+  m_PrefabInstance: {fileID: 9008611107568167329}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4b794ccad53a64e83fa380424fcfd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.DisjonctorController
 --- !u!1001 &9119052727537575137
 PrefabInstance:
   m_ObjectHideFlags: 0

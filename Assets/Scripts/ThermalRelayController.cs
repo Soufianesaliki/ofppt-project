@@ -19,7 +19,7 @@ namespace ElectricalWorkshop.Components
     ///   _correctSocket so only that specific slot can set isSnaped to true.
     /// </summary>
     [DisallowMultipleComponent]
-    public class ThermalRelayController : MonoBehaviour
+    public class ThermalRelayController : MonoBehaviour, ISnappable
     {
         [System.Serializable]
         public class BoolUnityEvent : UnityEvent<bool> { }
@@ -38,6 +38,8 @@ namespace ElectricalWorkshop.Components
 
         /// <summary>True while this thermal relay is placed in its correct circuit slot.</summary>
         public bool isSnaped => _isSnaped;
+
+        UnityEvent<bool> ISnappable.onSnappedChanged => onSnappedChanged;
 
         private void Awake()
         {

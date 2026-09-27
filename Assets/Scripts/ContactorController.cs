@@ -21,7 +21,7 @@ namespace ElectricalWorkshop.Components
     /// externally by the scene/circuit manager, same convention as VoyantController.isOn.
     /// </summary>
     [DisallowMultipleComponent]
-    public class ContactorController : MonoBehaviour
+    public class ContactorController : MonoBehaviour, ISnappable
     {
         [System.Serializable]
         public class BoolUnityEvent : UnityEvent<bool> { }
@@ -59,6 +59,8 @@ namespace ElectricalWorkshop.Components
 
         /// <summary>True while this contactor is placed in its correct circuit slot.</summary>
         public bool isSnaped => _isSnaped;
+
+        UnityEvent<bool> ISnappable.onSnappedChanged => onSnappedChanged;
 
         private void Awake()
         {

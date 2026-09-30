@@ -609,7 +609,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1.3654}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2530,6 +2530,57 @@ MonoBehaviour:
   m_PivotReferenceSize: 0
   m_Pivot: 1
   m_WorldSpaceCollider: {fileID: 0}
+--- !u!1 &888354061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 888354063}
+  - component: {fileID: 888354062}
+  m_Layer: 0
+  m_Name: ActivarionPhase-Code
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &888354062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888354061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78206f74b21e6c48bfe60aaaba79a42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ActivationPhaseManager
+  _disjonctor: {fileID: 9008611107568167338}
+  _contactor: {fileID: 1663748696055307467}
+  _marVoy: {fileID: 1691865602}
+  _arrVoy: {fileID: 7746954642246933921}
+  _marButton: {fileID: 1444815660}
+  _arrButton: {fileID: 1742114357}
+  _motor: {fileID: 2088751898}
+--- !u!4 &888354063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888354061}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 939113364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &900875274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -2830,6 +2881,8 @@ Transform:
   - {fileID: 963480137}
   - {fileID: 1378622254}
   - {fileID: 1677732781}
+  - {fileID: 888354063}
+  - {fileID: 1727840392}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959167434
@@ -3172,7 +3225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.07
+      value: -4.93
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5658,7 +5711,7 @@ MonoBehaviour:
     componentController: {fileID: 1691865602}
     socketRevealRenderers:
     - {fileID: 640186009}
-  onScenario2Complete:
+  onWiringPhaseComplete:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1690868613 stripped
@@ -5951,6 +6004,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871f6392bc18d044799fcea4b324cb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PartAnimationController
+--- !u!1 &1727840391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727840392}
+  - component: {fileID: 1727840393}
+  m_Layer: 0
+  m_Name: ScenarioFlow-Code
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1727840392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727840391}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 939113364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1727840393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727840391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c38b6168dce3ff4fadb230cd74ed123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.ScenarioFlowManager
+  _motorAnimationManager: {fileID: 1294317020}
+  _controllerInput: {fileID: 1378622255}
+  _scenario1Objects: []
+  _wiringSequenceManager: {fileID: 1677732782}
+  _activationPhaseManager: {fileID: 888354062}
+  _scenario2Objects: []
 --- !u!114 &1741515023 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6641768659990475790, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
@@ -6909,6 +7012,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88651586}
     m_Modifications:
+    - target: {fileID: 189895362733258419, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 189895362733258419, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 633264291351251376, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0
@@ -6977,6 +7088,14 @@ PrefabInstance:
       propertyPath: endPhaseDelay
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1971355852249532541, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 2088751899}
+    - target: {fileID: 1971355852249532541, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: _rotatingPart
+      value: 
+      objectReference: {fileID: 2088751900}
     - target: {fileID: 2027683541762400174, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0
@@ -7353,6 +7472,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 108.601
       objectReference: {fileID: 0}
+    - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8883050946958237937, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0
@@ -7501,6 +7624,27 @@ MonoBehaviour:
   onHideComplete:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2088751898 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1971355852249532541, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+  m_PrefabInstance: {fileID: 2088751894}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 781e78c501c388b479eb501b433e06b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.MotorRunController
+--- !u!82 &2088751899 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 189895362733258419, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+  m_PrefabInstance: {fileID: 2088751894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2088751900 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 923127193762962896, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+  m_PrefabInstance: {fileID: 2088751894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2095734570 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7228997957500110250, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
@@ -8411,6 +8555,10 @@ PrefabInstance:
       propertyPath: positionOffset.y
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1971355852249532541, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2027683541762400174, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0
@@ -8429,7 +8577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2027683541762400174, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: positionOffset.x
-      value: -0.2
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060888225910788364, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2435575230940061050, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
@@ -8591,6 +8743,10 @@ PrefabInstance:
       propertyPath: positionOffset.x
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4139306177904582730, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4343228692590822257, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0
@@ -8605,6 +8761,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4343228692590822257, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: endPhaseDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702619318839442786, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4925536509784815481, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
@@ -8667,6 +8827,10 @@ PrefabInstance:
       propertyPath: positionOffset.z
       value: -0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 5714000899627694806, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5753215904109692769, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0
@@ -8705,7 +8869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5857988295539812633, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: positionOffset.x
-      value: 0.4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6247938734610922319, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
@@ -8771,6 +8935,10 @@ PrefabInstance:
       propertyPath: positionOffset.x
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6980598695001778596, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7228997957500110250, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0
@@ -8817,7 +8985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7744551811327893604, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: positionOffset.x
-      value: -0.6
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: advanceBatchDebug
@@ -8841,15 +9009,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: batches.Array.data[0].pieces.Array.size
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: batches.Array.data[1].pieces.Array.size
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: batches.Array.data[2].pieces.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: 'batches.Array.data[0].pieces.Array.data[0]'
@@ -8930,11 +9098,11 @@ PrefabInstance:
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: 'batches.Array.data[2].pieces.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8804018212033969161}
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: 'batches.Array.data[2].pieces.Array.data[2]'
       value: 
-      objectReference: {fileID: 8804018212033969161}
+      objectReference: {fileID: 2017487719}
     - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: 'batches.Array.data[2].pieces.Array.data[3]'
       value: 
@@ -8955,6 +9123,22 @@ PrefabInstance:
       propertyPath: 'batches.Array.data[0].pieces.Array.data[13]'
       value: 
       objectReference: {fileID: 2007102893}
+    - target: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: 'batches.Array.data[0].pieces.Array.data[14]'
+      value: 
+      objectReference: {fileID: 1795520716}
+    - target: {fileID: 8308511312362454802, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501945659488373167, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879674773759647212, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8883050946958237937, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0

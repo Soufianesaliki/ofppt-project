@@ -32,8 +32,8 @@ namespace ElectricalWorkshop.Components
         [SerializeField] private WiringStep[] steps;
 
         [Header("Events")]
-        [Tooltip("Invoked once the last step's component has been snapped in.")]
-        public UnityEvent onScenario2Complete = new UnityEvent();
+        [Tooltip("Invoked once the last step's component has been snapped in — i.e. the wiring phase is complete.")]
+        public UnityEvent onWiringPhaseComplete = new UnityEvent();
 
         private int _currentStepIndex = -1;
 
@@ -42,23 +42,27 @@ namespace ElectricalWorkshop.Components
         /// <summary>Index of the step currently awaiting a snap (-1 = not started, StepsCount = fully done).</summary>
         public int currentStepIndex => _currentStepIndex;
 
-        private void Start()
+        private void Awake()
         {
-            BeginSequence();
+            HideAllVisuals();
         }
 
-        /// <summary>Starts (or restarts) the sequence from step 0.</summary>
+        /// <summary>Starts (or restarts) the sequence from step 0. Called by ScenarioFlowManager.</summary>
         public void BeginSequence()
         {
             UnsubscribeCurrent();
+            HideAllVisuals();
 
+            _currentStepIndex = -1;
+            AdvanceStep();
+        }
+
+        private void HideAllVisuals()
+        {
             for (int i = 0; i < StepsCount; i++)
             {
                 SetVisualActive(i, false);
             }
-
-            _currentStepIndex = -1;
-            AdvanceStep();
         }
 
         private void AdvanceStep()
@@ -67,7 +71,7 @@ namespace ElectricalWorkshop.Components
 
             if (_currentStepIndex >= StepsCount)
             {
-                onScenario2Complete.Invoke();
+                onWiringPhaseComplete.Invoke();
                 return;
             }
 

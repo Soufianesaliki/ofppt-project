@@ -28,8 +28,16 @@ namespace ElectricalWorkshop.UI
             _nextBatchAction.action.performed -= OnNextBatchPerformed;
         }
 
+        private bool _nextBatchEnabled = true;
+
+        /// <summary>Enables/disables the Next (B) action's effect without touching the X/A actions.</summary>
+        public void SetNextBatchInputEnabled(bool enabled) => _nextBatchEnabled = enabled;
+
         private void OnMenuButtonPerformed(InputAction.CallbackContext ctx) => _appController.TogglePauseMenu();
         private void OnReplayVoicePerformed(InputAction.CallbackContext ctx) => _appController.ReplayVoice();
-        private void OnNextBatchPerformed(InputAction.CallbackContext ctx) => _motorAnimationManager.AdvanceBatch();
+        private void OnNextBatchPerformed(InputAction.CallbackContext ctx)
+        {
+            if (_nextBatchEnabled) _motorAnimationManager.AdvanceBatch();
+        }
     }
 }

@@ -57,7 +57,7 @@ namespace ElectricalWorkshop.Components
         private MaterialPropertyBlock _mpb;
         private int _colorPropertyId;
 
-        /// <summary>True while the button is toggled On.</summary>
+        /// <summary>True only while the button is physically held (pressed/poked). Momentary, not a toggle.</summary>
         public bool isPushed => _isPushed;
 
         /// <summary>True while this button is placed in its correct circuit slot.</summary>
@@ -91,7 +91,9 @@ namespace ElectricalWorkshop.Components
             if (_pushInteractable != null)
             {
                 _pushInteractable.selectEntered.AddListener(OnPushSelectEntered);
+                _pushInteractable.selectExited.AddListener(OnPushSelectExited);
                 _pushInteractable.activated.AddListener(OnPushActivated);
+                _pushInteractable.deactivated.AddListener(OnPushDeactivated);
             }
 
             if (_grabInteractable != null)
@@ -108,7 +110,9 @@ namespace ElectricalWorkshop.Components
             if (_pushInteractable != null)
             {
                 _pushInteractable.selectEntered.RemoveListener(OnPushSelectEntered);
+                _pushInteractable.selectExited.RemoveListener(OnPushSelectExited);
                 _pushInteractable.activated.RemoveListener(OnPushActivated);
+                _pushInteractable.deactivated.RemoveListener(OnPushDeactivated);
             }
 
             if (_grabInteractable != null)
@@ -118,18 +122,21 @@ namespace ElectricalWorkshop.Components
             }
         }
 
-        // Poking fires selectEntered (via the interactable's Poke Filter). A controller
-        // pointing at the button and pulling its physical trigger fires "activated" instead —
-        // XRI's default input actions bind Select to Grip and Activate to Trigger — so both
-        // paths are listened to and treated as the same toggle. Enable "Allow Hovered Activate"
-        // on the Ray/Near-Far Interactor so Activate fires from pointing alone, no grab needed.
-        private void OnPushSelectEntered(SelectEnterEventArgs args) => TogglePushed();
+        // Poking fires selectEntered/selectExited (via the interactable's Poke Filter). A
+        // controller pointing at the button and pulling/releasing its physical trigger fires
+        // activated/deactivated instead — XRI's default input actions bind Select to Grip and
+        // Activate to Trigger — so both paths are listened to and treated as the same
+        // momentary press: isPushed is true only while physically held, false on release.
+        private void OnPushSelectEntered(SelectEnterEventArgs args) => SetPushed(true);
+        private void OnPushSelectExited(SelectExitEventArgs args) => SetPushed(false);
+        private void OnPushActivated(ActivateEventArgs args) => SetPushed(true);
+        private void OnPushDeactivated(DeactivateEventArgs args) => SetPushed(false);
 
-        private void OnPushActivated(ActivateEventArgs args) => TogglePushed();
-
-        private void TogglePushed()
+        private void SetPushed(bool pushed)
         {
-            _isPushed = !_isPushed;
+            if (_isPushed == pushed) return;
+
+            _isPushed = pushed;
             Debug.Log($"Button Pressed: {_isPushed}");
             onPushedChanged.Invoke(_isPushed);
         }

@@ -1848,6 +1848,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2714073277713208375, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
       insertIndex: -1
       addedObject: {fileID: 439832756}
+    - targetCorrespondingSourceObject: {fileID: 7138875044011837315, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1256548754}
     - targetCorrespondingSourceObject: {fileID: -2994691537530769966, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1399293975}
@@ -3643,6 +3646,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
+--- !u!1 &1256548750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7138875044011837315, guid: 6c6747f4615a7f4488202d8996537f58, type: 3}
+  m_PrefabInstance: {fileID: 640185998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1256548754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256548750}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 118, y: 68.90001, z: 1.300003}
+  m_Center: {x: 0.16629791, y: 1.9662399, z: 0}
 --- !u!1 &1275384367
 GameObject:
   m_ObjectHideFlags: 0
@@ -5687,30 +5716,37 @@ MonoBehaviour:
     componentController: {fileID: 9008611107568167338}
     socketRevealRenderers:
     - {fileID: 1007868015}
+    socket: {fileID: 1007868012}
   - label: Contactor
     componentController: {fileID: 1663748696055307467}
     socketRevealRenderers:
     - {fileID: 1472654213}
+    socket: {fileID: 1472654210}
   - label: Thermal Relay
     componentController: {fileID: 1394879760}
     socketRevealRenderers:
     - {fileID: 1399293977}
+    socket: {fileID: 1399293973}
   - label: Arr Button
     componentController: {fileID: 1742114357}
     socketRevealRenderers:
     - {fileID: 400091848}
+    socket: {fileID: 400091841}
   - label: Mar Button
     componentController: {fileID: 1444815660}
     socketRevealRenderers:
     - {fileID: 152202912}
+    socket: {fileID: 152202905}
   - label: Arr Voyant
     componentController: {fileID: 7746954642246933921}
     socketRevealRenderers:
     - {fileID: 640186012}
+    socket: {fileID: 640186005}
   - label: Mar Voyant
     componentController: {fileID: 1691865602}
     socketRevealRenderers:
     - {fileID: 640186009}
+    socket: {fileID: 640186002}
   onWiringPhaseComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -5775,15 +5811,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
       propertyPath: _offColor.b
-      value: 0.16078432
+      value: 0.12058822
       objectReference: {fileID: 0}
     - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
       propertyPath: _offColor.g
-      value: 0.8
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
       propertyPath: _offColor.r
-      value: 0.20784314
+      value: 0.15588233
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
+      propertyPath: _onIntensity
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
       propertyPath: _correctSocket
@@ -7252,6 +7292,10 @@ PrefabInstance:
       propertyPath: endPhaseDelay
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4702619318839442786, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4925536509784815481, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0
@@ -8442,15 +8486,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
       propertyPath: _offColor.b
-      value: 0.16078432
+      value: 0.12156863
       objectReference: {fileID: 0}
     - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
       propertyPath: _offColor.g
-      value: 0.16078432
+      value: 0.12156863
       objectReference: {fileID: 0}
     - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
       propertyPath: _offColor.r
-      value: 0.8
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
+      propertyPath: _onIntensity
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2609058123131156984, guid: 011eda90765da044eb473163837a0bb9, type: 3}
       propertyPath: _correctSocket
@@ -9305,6 +9353,10 @@ PrefabInstance:
     - target: {fileID: 310994703855533489, guid: bed7724747a0db74db9bccf45108b7cf, type: 3}
       propertyPath: m_AttachTransform
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4772736484857344563, guid: bed7724747a0db74db9bccf45108b7cf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5082033394058287906, guid: bed7724747a0db74db9bccf45108b7cf, type: 3}
       propertyPath: m_LocalPosition.x

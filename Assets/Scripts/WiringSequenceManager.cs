@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.XR.Interaction.Toolkit.Filtering;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 namespace ElectricalWorkshop.Components
 {
@@ -24,6 +27,11 @@ namespace ElectricalWorkshop.Components
             [Tooltip("Renderer(s) enabled while it's this step's turn, disabled once the step is complete. Toggling only the Renderer (not the GameObject) keeps the socket's own functionality — XRSocketInteractor, joints, etc. — untouched, so a piece already snapped in doesn't fall when its highlight is hidden.")]
             public Renderer[] socketRevealRenderers;
 
+            [Tooltip("This step's own socket. Kept inactive until this step's turn so only the required part can be snapped.")]
+            public XRSocketInteractor socket;
+
+            [System.NonSerialized] public XRSelectFilterDelegate lockFilter;
+
             public ISnappable Snappable => componentController as ISnappable;
         }
 
@@ -45,6 +53,11 @@ namespace ElectricalWorkshop.Components
         private void Awake()
         {
             HideAllVisuals();
+
+            for (int i = 0; i < StepsCount; i++)
+            {
+                SetSocketActive(i, false);
+            }
         }
 
         /// <summary>Starts (or restarts) the sequence from step 0. Called by ScenarioFlowManager.</summary>
@@ -53,8 +66,15 @@ namespace ElectricalWorkshop.Components
             UnsubscribeCurrent();
             HideAllVisuals();
 
+            for (int i = 0; i < StepsCount; i++)
+            {
+                UnlockStep(i);
+            }
+
+            // Sockets are deliberately not re-deactivated here (Awake already did): setting
+            // socketActive = false on a socket that already holds a piece is unverified.
             _currentStepIndex = -1;
-            AdvanceStep();
+            AdvanceStep(); // activates step 0's socket
         }
 
         private void HideAllVisuals()
@@ -77,11 +97,19 @@ namespace ElectricalWorkshop.Components
 
             WiringStep step = steps[_currentStepIndex];
             SetVisualActive(_currentStepIndex, true);
+            SetSocketActive(_currentStepIndex, true);
 
             ISnappable snappable = step.Snappable;
             if (snappable == null)
             {
                 Debug.LogWarning($"WiringSequenceManager: step '{step.label}' has no component implementing ISnappable assigned.");
+                return;
+            }
+
+            // Defensive: already snapped (e.g. pre-placed) -> no event will come, so complete now.
+            if (snappable.isSnaped)
+            {
+                CompleteCurrentStep();
                 return;
             }
 
@@ -93,9 +121,51 @@ namespace ElectricalWorkshop.Components
             if (!snapped) return; // ignore unsnap — removing a piece mid-task doesn't rewind
 
             steps[_currentStepIndex].Snappable?.onSnappedChanged.RemoveListener(OnCurrentStepSnappedChanged);
+            CompleteCurrentStep();
+        }
+
+        private void CompleteCurrentStep()
+        {
             SetVisualActive(_currentStepIndex, false);
+            LockStep(_currentStepIndex);
 
             AdvanceStep();
+        }
+
+        private void SetSocketActive(int index, bool active)
+        {
+            XRSocketInteractor s = steps[index]?.socket;
+            if (s != null)
+            {
+                s.socketActive = active;
+            }
+        }
+
+        /// <summary>Once placed, a part can only be selected by a socket — hands/rays are rejected.</summary>
+        private void LockStep(int index)
+        {
+            WiringStep step = steps[index];
+            if (step == null || step.lockFilter != null || step.componentController == null) return;
+
+            XRGrabInteractable grab = step.componentController.GetComponent<XRGrabInteractable>();
+            if (grab == null) return;
+
+            step.lockFilter = new XRSelectFilterDelegate((interactor, interactable) => interactor is XRSocketInteractor);
+            grab.selectFilters.Add(step.lockFilter);
+        }
+
+        private void UnlockStep(int index)
+        {
+            WiringStep step = steps[index];
+            if (step == null || step.lockFilter == null) return;
+
+            if (step.componentController != null)
+            {
+                XRGrabInteractable grab = step.componentController.GetComponent<XRGrabInteractable>();
+                if (grab != null) grab.selectFilters.Remove(step.lockFilter);
+            }
+
+            step.lockFilter = null;
         }
 
         private void UnsubscribeCurrent()

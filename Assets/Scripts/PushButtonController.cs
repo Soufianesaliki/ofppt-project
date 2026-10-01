@@ -120,6 +120,10 @@ namespace ElectricalWorkshop.Components
                 _grabInteractable.selectEntered.RemoveListener(OnGrabSelectEntered);
                 _grabInteractable.selectExited.RemoveListener(OnGrabSelectExited);
             }
+
+            // Silent reset: a disable mid-press would otherwise leave isPushed stuck true
+            // (the release callbacks are unsubscribed above), swallowing every later press.
+            _isPushed = false;
         }
 
         // Poking fires selectEntered/selectExited (via the interactable's Poke Filter). A

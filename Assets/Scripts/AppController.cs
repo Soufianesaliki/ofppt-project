@@ -36,6 +36,7 @@ namespace ElectricalWorkshop.UI
         {
             _isPaused = true;
             Time.timeScale = 0f;
+            AudioListener.pause = true;
             _menuCanvas.SetActive(true);
         }
 
@@ -43,6 +44,7 @@ namespace ElectricalWorkshop.UI
         {
             _isPaused = false;
             Time.timeScale = 1f;
+            AudioListener.pause = false;
             _menuCanvas.SetActive(false);
         }
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace ElectricalWorkshop.Components
 {
@@ -30,6 +31,13 @@ namespace ElectricalWorkshop.Components
         [SerializeField] private PushButtonController _marButton;
         [SerializeField] private PushButtonController _arrButton;
         [SerializeField] private MotorRunController _motor;
+
+        [Header("Events")]
+        [Tooltip("Invoked when a MAR press takes effect (Idle -> Running). Subscribed in code by VoiceoverManager — leave empty in the Inspector.")]
+        public UnityEvent onMarAccepted = new UnityEvent();
+
+        [Tooltip("Invoked when an ARR press takes effect (Running -> Idle). Subscribed in code by VoiceoverManager — leave empty in the Inspector.")]
+        public UnityEvent onArrAccepted = new UnityEvent();
 
         private bool _isActive;
         private bool _isRunning;
@@ -73,6 +81,7 @@ namespace ElectricalWorkshop.Components
             if (_disjonctor == null || !_disjonctor.isOn) return; // ignored while disjonctor is off
 
             GoRunning();
+            onMarAccepted.Invoke();
         }
 
         private void OnArrPushed(bool pushed)
@@ -81,6 +90,7 @@ namespace ElectricalWorkshop.Components
             if (!_isRunning) return;
 
             GoIdle();
+            onArrAccepted.Invoke();
         }
 
         private void GoRunning()

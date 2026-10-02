@@ -55,6 +55,9 @@ namespace ElectricalWorkshop.Components
         public BoolUnityEvent onStateChanged = new BoolUnityEvent();
         public BoolUnityEvent onSnappedChanged = new BoolUnityEvent();
 
+        [Tooltip("Invoked when a hand/ray (anything that is not a socket) grabs the breaker. Subscribed in code by VoiceoverManager — leave empty in the Inspector.")]
+        public UnityEvent onGrabbed = new UnityEvent();
+
         private bool _isOn;
         private bool _isSnaped;
         private XRSimpleInteractable _switchInteractable;
@@ -143,6 +146,13 @@ namespace ElectricalWorkshop.Components
 
         private void OnGrabSelectEntered(SelectEnterEventArgs args)
         {
+            // A hand/ray grab (not a socket taking the part) is reported separately.
+            if (!(args.interactorObject is XRSocketInteractor))
+            {
+                onGrabbed.Invoke();
+                return;
+            }
+
             if (_correctSocket == null || !ReferenceEquals(args.interactorObject, _correctSocket))
                 return;
 

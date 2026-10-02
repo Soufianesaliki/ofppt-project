@@ -232,8 +232,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 6955630149426572526, guid: fe5cd0209c254034ab996b9005e8cdcb, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3401,6 +3401,12 @@ MonoBehaviour:
   _marButton: {fileID: 1444815660}
   _arrButton: {fileID: 1742114357}
   _motor: {fileID: 2088751898}
+  onMarAccepted:
+    m_PersistentCalls:
+      m_Calls: []
+  onArrAccepted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &888354063
 Transform:
   m_ObjectHideFlags: 0
@@ -3770,6 +3776,7 @@ Transform:
   - {fileID: 1677732781}
   - {fileID: 888354063}
   - {fileID: 1727840392}
+  - {fileID: 1282129812}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959167434
@@ -4987,6 +4994,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 148538299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1282129811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282129812}
+  - component: {fileID: 1282129813}
+  m_Layer: 0
+  m_Name: Voice-Code
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282129812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282129811}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 939113364}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1282129813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282129811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc72f96dbb781f349a152dd0ee469d39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.VoiceoverManager
+  _speechSource: {fileID: 84836498}
+  _startClip: {fileID: 8300000, guid: ad0ceddb724783149aab1c3bc346f75d, type: 3}
+  _startDelay: 1
+  _batchClips:
+  - {fileID: 8300000, guid: 0d54a5224165fad4a8e0625f16a338b9, type: 3}
+  - {fileID: 8300000, guid: a9dbf6bfb4071a74b814c60bba744483, type: 3}
+  - {fileID: 8300000, guid: 12d34dd2cdd8190438ddc25a169f0263, type: 3}
+  _scenario1EndClip: {fileID: 8300000, guid: cbdd10e8bed377a47ad720924792abf7, type: 3}
+  _disjonctorGrabClip: {fileID: 8300000, guid: 5892352a32768c34baba379458a631ab, type: 3}
+  _wiringCompleteClip: {fileID: 8300000, guid: 6527c12e5cd83834c90a0cceaef67bc0, type: 3}
+  _disjonctorOnClip: {fileID: 8300000, guid: 82d853bca28bc3c46a046db7faced66c, type: 3}
+  _marPressedClip: {fileID: 8300000, guid: 52d66ebc458432041a0aa33b6a324bf0, type: 3}
+  _arrPressedClip: {fileID: 8300000, guid: 089e3b9d9f3b10547bdb227b142a1893, type: 3}
+  _motorAnimationManager: {fileID: 1294317020}
+  _wiringSequenceManager: {fileID: 1677732782}
+  _activationPhaseManager: {fileID: 888354062}
+  _disjonctor: {fileID: 9008611107568167338}
 --- !u!114 &1294317020 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7913941393739826869, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
@@ -9075,6 +9143,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 189895362733258419, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: m_Volume
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 189895362733258419, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -9154,6 +9226,10 @@ PrefabInstance:
       propertyPath: _rotatingPart
       value: 
       objectReference: {fileID: 2088751900}
+    - target: {fileID: 1971355852249532541, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
+      propertyPath: _rotationSpeed
+      value: 2160
+      objectReference: {fileID: 0}
     - target: {fileID: 2027683541762400174, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
       propertyPath: activate
       value: 0

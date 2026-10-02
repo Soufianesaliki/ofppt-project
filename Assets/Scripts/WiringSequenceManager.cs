@@ -50,6 +50,13 @@ namespace ElectricalWorkshop.Components
         /// <summary>Index of the step currently awaiting a snap (-1 = not started, StepsCount = fully done).</summary>
         public int currentStepIndex => _currentStepIndex;
 
+        /// <summary>True while <paramref name="component"/> belongs to the step currently awaiting a snap.</summary>
+        public bool IsStepActive(MonoBehaviour component)
+        {
+            if (component == null || _currentStepIndex < 0 || _currentStepIndex >= StepsCount) return false;
+            return steps[_currentStepIndex].componentController == component;
+        }
+
         private void Awake()
         {
             HideAllVisuals();

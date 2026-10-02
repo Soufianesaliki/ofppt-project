@@ -66,6 +66,10 @@ namespace ElectricalWorkshop.UI
 
         public void RestartScene()
         {
+            // Both survive a scene load, so clear them first — a restart from the pause menu
+            // must not start frozen/silent.
+            Time.timeScale = 1f;
+            AudioListener.pause = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 

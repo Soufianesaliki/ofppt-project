@@ -22,6 +22,9 @@ namespace ElectricalWorkshop.Components
         [Tooltip("Active at start, deactivated when Scenario 2 begins. Leave empty to keep the first bench visible.")]
         [SerializeField] private GameObject[] _scenario1Objects;
 
+        [Tooltip("Shows image i when batch i starts revealing, then its end image when Scenario 1 completes.")]
+        [SerializeField] private WhiteboardImageController _scenario1Whiteboard;
+
         [Header("Scenario 2")]
         [SerializeField] private WiringSequenceManager _wiringSequenceManager;
         [SerializeField] private ActivationPhaseManager _activationPhaseManager;
@@ -29,10 +32,16 @@ namespace ElectricalWorkshop.Components
         [Tooltip("Inactive at start, activated when Scenario 2 begins.")]
         [SerializeField] private GameObject[] _scenario2Objects;
 
+        [Tooltip("Image 0 during the wiring phase, image 1 during the activation phase.")]
+        [SerializeField] private WhiteboardImageController _scenario2Whiteboard;
+
         private void OnEnable()
         {
             if (_motorAnimationManager != null)
+            {
+                _motorAnimationManager.onBatchRevealStarted.AddListener(OnBatchRevealStarted);
                 _motorAnimationManager.onScenario1Complete.AddListener(StartScenario2);
+            }
 
             if (_wiringSequenceManager != null)
                 _wiringSequenceManager.onWiringPhaseComplete.AddListener(OnWiringPhaseComplete);
@@ -41,7 +50,10 @@ namespace ElectricalWorkshop.Components
         private void OnDisable()
         {
             if (_motorAnimationManager != null)
+            {
+                _motorAnimationManager.onBatchRevealStarted.RemoveListener(OnBatchRevealStarted);
                 _motorAnimationManager.onScenario1Complete.RemoveListener(StartScenario2);
+            }
 
             if (_wiringSequenceManager != null)
                 _wiringSequenceManager.onWiringPhaseComplete.RemoveListener(OnWiringPhaseComplete);
@@ -54,6 +66,12 @@ namespace ElectricalWorkshop.Components
             Debug.Log("ScenarioFlowManager: Scenario 1 started.");
         }
 
+        private void OnBatchRevealStarted(int batchIndex)
+        {
+            if (_scenario1Whiteboard != null)
+                _scenario1Whiteboard.ShowImage(batchIndex);
+        }
+
         private void StartScenario2()
         {
             Debug.Log("ScenarioFlowManager: Scenario 1 complete, starting Scenario 2.");
@@ -64,6 +82,12 @@ namespace ElectricalWorkshop.Components
             SetGroupActive(_scenario1Objects, false);
             SetGroupActive(_scenario2Objects, true); // activate before BeginSequence so Awake has run
 
+            if (_scenario1Whiteboard != null)
+                _scenario1Whiteboard.ShowEnd();
+
+            if (_scenario2Whiteboard != null)
+                _scenario2Whiteboard.ShowImage(0); // wiring phase
+
             if (_wiringSequenceManager != null)
                 _wiringSequenceManager.BeginSequence();
         }
@@ -71,6 +95,9 @@ namespace ElectricalWorkshop.Components
         private void OnWiringPhaseComplete()
         {
             Debug.Log("ScenarioFlowManager: Wiring phase complete, starting activation phase.");
+
+            if (_scenario2Whiteboard != null)
+                _scenario2Whiteboard.ShowImage(1); // activation phase
 
             if (_activationPhaseManager != null)
                 _activationPhaseManager.BeginActivationPhase();

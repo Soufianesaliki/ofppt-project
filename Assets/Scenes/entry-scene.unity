@@ -1605,6 +1605,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88651586}
     m_Modifications:
+    - target: {fileID: 3410511407780895617, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
+      propertyPath: _targetRenderer
+      value: 
+      objectReference: {fileID: 596748605}
+    - target: {fileID: 3410511407780895617, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
+      propertyPath: _images.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410511407780895617, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
+      propertyPath: '_images.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 1b8cb974b835f9d4a801e28797ec7bf0, type: 3}
+    - target: {fileID: 3410511407780895617, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
+      propertyPath: '_images.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 02aafe8dc7b75d041b51f885e697fd6d, type: 3}
+    - target: {fileID: 3410511407780895617, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
+      propertyPath: '_images.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2800000, guid: c79275d63c00abf42816eeb9e325d109, type: 3}
     - target: {fileID: 6420853327112098391, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
       propertyPath: m_Name
       value: WhiteBoard-scenario-1
@@ -1659,6 +1679,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8559442741404260455, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
   m_PrefabInstance: {fileID: 596748603}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &596748605 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3288323404742673154, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
+  m_PrefabInstance: {fileID: 596748603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &596748606 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3410511407780895617, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
+  m_PrefabInstance: {fileID: 596748603}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b76c2fe0589eb4b92dc18dd79d8d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.WhiteboardImageController
 --- !u!1 &613860236
 GameObject:
   m_ObjectHideFlags: 0
@@ -6091,9 +6127,11 @@ MonoBehaviour:
   _motorAnimationManager: {fileID: 1294317020}
   _controllerInput: {fileID: 1378622255}
   _scenario1Objects: []
+  _scenario1Whiteboard: {fileID: 596748606}
   _wiringSequenceManager: {fileID: 1677732782}
   _activationPhaseManager: {fileID: 888354062}
   _scenario2Objects: []
+  _scenario2Whiteboard: {fileID: 1752867784586922182}
 --- !u!114 &1741515023 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6641768659990475790, guid: 315b12ba574f6d943bc20ab518cbf3cf, type: 3}
@@ -8146,6 +8184,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8559442741404260455, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
   m_PrefabInstance: {fileID: 1752867784586922180}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1752867784586922182 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3410511407780895617, guid: 5404cf9a3bbb2e547ae39caf0c65e310, type: 3}
+  m_PrefabInstance: {fileID: 1752867784586922180}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b76c2fe0589eb4b92dc18dd79d8d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ElectricalWorkshop.Components.WhiteboardImageController
 --- !u!1001 &2010502054003404927
 PrefabInstance:
   m_ObjectHideFlags: 0

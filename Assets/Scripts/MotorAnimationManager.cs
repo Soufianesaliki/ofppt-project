@@ -29,11 +29,17 @@ public class MotorAnimationManager : MonoBehaviour
         public PartAnimationController[] pieces;
     }
 
+    [System.Serializable]
+    public class IntUnityEvent : UnityEvent<int> { }
+
     [Header("Batches")]
     [Tooltip("The pieces belonging to each batch, in the order the batches should be revealed.")]
     [SerializeField] private RevealBatch[] batches;
 
     [Header("Events")]
+    [Tooltip("Invoked with the batch index at the moment that batch's reveal starts (for the first batch: on the first press; for later batches: once the previous batch has fully hidden). Subscribed in code by ScenarioFlowManager — leave empty in the Inspector.")]
+    public IntUnityEvent onBatchRevealStarted = new IntUnityEvent();
+
     [Tooltip("Invoked once the last batch has been hidden (the extra press after the last reveal).")]
     public UnityEvent onScenario1Complete = new UnityEvent();
 
@@ -104,6 +110,7 @@ public class MotorAnimationManager : MonoBehaviour
         {
             // First press: nothing to hide yet.
             _currentBatchIndex = 0;
+            onBatchRevealStarted.Invoke(0);
             StartReveal(batches[0]);
         }
         else
@@ -234,6 +241,7 @@ public class MotorAnimationManager : MonoBehaviour
             _currentBatchIndex = revealIndex;
 
             _pendingCount = 0;
+            onBatchRevealStarted.Invoke(revealIndex);
             StartReveal(batches[revealIndex]);
 
             if (_pendingCount == 0)

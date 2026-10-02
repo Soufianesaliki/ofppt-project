@@ -297,6 +297,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: collider-mat
+    second: {fileID: 2100000, guid: b4a67b03bc128e24ba9af24ad2e93f29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ghost-mat
     second: {fileID: 2100000, guid: 56a8e584ada921648b609496a2893519, type: 2}
   - first:
@@ -329,6 +334,76 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: phase-cbl-mat
     second: {fileID: 2100000, guid: c1bd805fe0431d04ca022feb6ae013e8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image 24 sept. 2026, 13_34_18
+    second: {fileID: 2800000, guid: 301af30d3bdcfad429a75ebd84da7c6c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Control-panle-1-1024x492 (1)
+    second: {fileID: 2800000, guid: 79a07c7a1234a9346a4d225dce8e1dad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Electrical Panel (1) (1)
+    second: {fileID: 2800000, guid: e19fc02dc1f39374eac558d5268f485f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GWC Zinc Hammered Finish_BaseColor
+    second: {fileID: 2800000, guid: 7df0e93e4c5596a4a842426a95e99599, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GWC Zinc Hammered Finish_Metallic
+    second: {fileID: 2800000, guid: 030c72ac69fa1f54f9fafed39437bde1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GWC Zinc Hammered Finish_Normal
+    second: {fileID: 2800000, guid: c31c3f6a3b0f01a46803ae183dfb516a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Untitled design
+    second: {fileID: 2800000, guid: 8187867fb2fca0342a9f198e21f4306b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Untitled design (2)
+    second: {fileID: 2800000, guid: ed3783d7e284c0d419a34f1b00acd36b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal floor_ao
+    second: {fileID: 2800000, guid: 27d99d2fc14a1c24a85d2676ea65c171, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal floor_diffuseOriginal
+    second: {fileID: 2800000, guid: 63b7d2d72ab517e4fbe7dd8fc8520ba7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wires-02-colour-old_4k_basecolor
+    second: {fileID: 2800000, guid: 82a071534b4337c4c8d30880efa955d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wires-02-colour-old_4k_normal
+    second: {fileID: 2800000, guid: 87423962728fa9a4c9f3cc6810194961, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wires_v1_2k_Base_Color
+    second: {fileID: 2800000, guid: 9cfaee71dfe104f4db1c2354b0af7db5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wires_v1_2k_Normal
+    second: {fileID: 2800000, guid: df2feb91f10138b47afd5fe70ef4d8b8, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

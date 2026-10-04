@@ -46,6 +46,7 @@ namespace ElectricalWorkshop.UI
             Time.timeScale = 1f;
             AudioListener.pause = false;
             _menuCanvas.SetActive(false);
+            _controlsGuideCanvas.SetActive(false);
         }
 
         public void ReplayVoice()
